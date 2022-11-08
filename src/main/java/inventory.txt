@@ -1,0 +1,5 @@
+/*name; price; quantity*/
+maslo; 3; 20
+chleb; 2.50; 30
+woda; 1.49; 50
+
