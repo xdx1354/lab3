@@ -1,10 +1,19 @@
 public class Product {
+    String tag;
     String name;
-    Integer quantity;
     Float price;
-    Product(String name, Integer quantity, Float price){
+
+    Product(String tag, String name, Float price){
         this.name = name;
         this.price = price;
-        this.quantity = quantity;
+        this.tag = tag;
+    }
+    @Override
+    public String toString(){
+        return "\n" + "Tag: " + tag + ", Name: " + name + ", price:" + price;
     }
 }
+
+
+
+

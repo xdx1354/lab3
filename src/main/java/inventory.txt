@@ -1,5 +1,3 @@
-/*name; price; quantity*/
-maslo; 3; 20
-chleb; 2.50; 30
-woda; 1.49; 50
-
+0001, maslo, 3.0
+0002, chleb, 2.50
+0003, woda, 1.49

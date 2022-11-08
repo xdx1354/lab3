@@ -1,0 +1,29 @@
+/*
+UWAGI I WSKAZÓWKI
+- nie trzeba korzystać z klasy easyReader/EasyWriter - wczytujemy linię z pliku (Scanner)
+- stworzyc dwa programy
+- 1 dla sprzedawcy i 1 dla klienta
+- sprzedawca może dodawać do bazy artykuły
+- klient dodaje do koszyka, kupuje i zabiera z bazy
+- oparte są na jednym pliku tekstowym do którego są dodawne i zabierane produkty
+PLIK TEKSTOWY
+format: kod, nazwa, cena,
+BEZ ILOSCI -> kolejne produkty wpisujemy z innym kodem, ale tą samą nazwą
+kod - unikalny wybrany kod dla kazdego produktu. Zastosować czterocyfrową liczbę tj. 0001 / ewentulanie z literkami
+
+zczytywanie
+- zczytujemy linie i do dodajemy do listy list<String>. Potem rozdzielamy za pomocą StringTokenizer() ??
+
+
+
+ZAPIS PLIKU
+- mozna skorzystać z PrintWriter. Pamiętać o zamknięciu!
+
+
+TODO
+-addItem() dopisuje wybrany produkt do pliku i do tabeli
+-takeItem() usuwa wybrany produkt z tabeli oraz z pliku (musi usuwać też pustą linię po nim)
+
+
+
+ */
