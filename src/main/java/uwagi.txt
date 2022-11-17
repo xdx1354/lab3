@@ -21,9 +21,37 @@ ZAPIS PLIKU
 
 
 TODO
--addItem() dopisuje wybrany produkt do pliku i do tabeli
--takeItem() usuwa wybrany produkt z tabeli oraz z pliku (musi usuwać też pustą linię po nim)
+- wyszukiwanie ze specjalnymi znakami
+- dlaczego nie scannery się psują przy ich zamykaniu
+- wyświetlanie portfela (de facto to samo co finalizacja zamówienia)
+- exception handling
+
+EXCEPTIONS
+- usuwanie produktu o nieistniejacym tagu
+- dodawanie produktu o cenie niebedacej float
+- podanie argumentu innego niż 1-x przy wyborze funkcji programu
 
 
+
+ SPRZEDAWCA
+ - drukowanie
+ - dodawanie produktów
+ - usuwanie produktów
+
+
+ KLIENT
+ - drukowanie
+ - wyszukiwanie produktu
+ - dodawanie do koszyka
+ - podliczanie wartości koszyka
+ - finalizowanie zakupu (petla po porduktach w koszyku, bierze ich tag i przekazuje do funkcji usun(tag)
+
+
+
+
+ZAD2
+- wykorzystac ArrayList ArrayList(26) <- z góry określamy wielkość listy
+- add(index, *obj*)
+- klasa z polami: ilosc, lista imion
 
  */
