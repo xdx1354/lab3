@@ -3,8 +3,8 @@ import org.jetbrains.annotations.NotNull;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -49,18 +49,17 @@ public class Utils {
 
     public static void searchForItem(@NotNull List<Product> itemsList, String nameFromUser){
         int ile = 0;
-        String customPattern = nameFromUser;
-        customPattern.replace("?",".");
-        customPattern.replace("*",".*"); // NIE DZIAŁA DO POPRAWY
+        nameFromUser=nameFromUser.toLowerCase(Locale.ROOT);
+        String customPattern = nameFromUser.replace("?","[a-zA-Z]");
+        customPattern = customPattern.replace("*","[a-zA-Z]+");
 
         for( Product p: itemsList){
-            Pattern pattern = Pattern.compile(customPattern);
-            Matcher matcher = pattern.matcher(p.name);
-            //Pattern.matches(p.name,nameFromUser)
-            if(matcher.matches()){
-                ile++;
-                System.out.print(p.toString());
-            }
+                Pattern pattern = Pattern.compile(customPattern);
+                Matcher matcher = pattern.matcher(p.name);
+                if(matcher.matches()){
+                    ile++;
+                    System.out.print(p.toString());
+                }
         }
         if(ile==0){
             System.out.println("Nie ma takiego produktu");

@@ -47,8 +47,6 @@ EXCEPTIONS
  - finalizowanie zakupu (petla po porduktach w koszyku, bierze ich tag i przekazuje do funkcji usun(tag)
 
 
-
-
 ZAD2
 - wykorzystac ArrayList ArrayList(26) <- z góry określamy wielkość listy
 - add(index, *obj*)
